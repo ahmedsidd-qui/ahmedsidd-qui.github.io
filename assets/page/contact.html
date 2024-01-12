@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body>
+    <div class="contact-page">
+    <div class="top-section">
+      <div class="logo">
+          <img src="/assets/images/logo.png" alt="">
+      </div>
+      <div class="nav-items">
+          <ul>
+              <li><a href="/assets/page/home.html">home</a></li>
+              <li><a href="/assets/page/work.html">work</a></li>
+              <li><a href="/assets/page/resume.html">resume</a></li>
+              <li><a href="/assets/page/blogs.html">blogs</a></li>
+              <li><a href="/assets/page/about.html">about</a></li>
+          </ul>
+      </div>
+      </div>
+    <div class="contact-form">
+      <h3>Send a query</h3>
+      <p>Sign up with your email address to receive news and exclusive updates about future opportunities and more!</p>
+      <form action="https://formsubmit.co/ahmedsiddiqui3277@gmail.com" method="POST">
+          <input type="text" name="name" placeholder="First name" required>
+          <input type="text" name="name" placeholder="Last name" required>
+          <input type="email" name="email" placeholder="Email address" required>
+          <input type="text" name="subject" placeholder="Subject" required>
+          <textarea name="message" cols="30" placeholder="Messsge" required></textarea>
+          <button type="submit">Send</button>
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="http://127.0.0.1:5500/assets/page/contact.html">
+      </form>
+  </div>
+</div>
+  </body>
+</html>
