@@ -3,6 +3,10 @@
   src: url(/assets/fonts/futura\ light\ bt.ttf);
 }
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
 .margin{
   margin: 0 60px 0 70px;
 }
@@ -220,3 +224,48 @@
   font-size: 18px;
 }
 
+/* blogs.html */
+.blog{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.blog-left{
+  width: 56vw;
+}
+.blog-left h2{
+  color: #808080;
+  font-size: 30px;
+}
+.blog-left h3{
+  color: #808080;
+}
+.blog-left p,
+.blog-left ul li{
+  font-size: 18px;
+  line-height: 35px;
+  padding-top: 20px;
+}
+.blog-left img{
+  width: 200px;
+}
+.blog-right{
+  width: 28vw;
+}
+.blog-right img{
+  width: 28vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  margin: 12px 0 35px 0;
+}
+.blog-right h1{
+  color: #808080;
+}
+.blog-right a{
+  color: #808080;
+  font-size: 20px;
+}
+.blog-right a:hover{
+  color: #000;
+}
