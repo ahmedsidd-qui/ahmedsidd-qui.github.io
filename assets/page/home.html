@@ -10,22 +10,16 @@
 </head>
 <body>
     <div class="margin">
-    <div class="top-section">
-    <div class="logo">
-        <img src="/assets/images/logo.png" alt="">
-    </div>
-    <div class="nav-items">
-        <ul>
-            <li><a href="/assets/page/home.html">home</a></li>
-            <li><a href="/assets/page/work.html">work</a></li>
-            <li><a href="/assets/page/resume.html">resume</a></li>
-            <li><a href="/assets/page/blogs.html">blogs</a></li>
-            <li><a href="/assets/page/about.html">about</a></li>
-        </ul>
-    </div>
-    </div>
+    <div id="navsection"></div>
+    <div class="container">
     <div class="picture">
+        <img src="/assets/images/welcome-picture.jpg" alt="">
     </div>
+    <div class="overlay-text">
+        <p id="changing-text">Welcome</p>
+      </div>
+    </div>
+</div>
     <div class="bottom-section">
         <a href="https://www.instagram.com/ahmedsidd_qui/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
         <a href="http://linkedin.com/in/ahmedsidd-qui" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
@@ -33,9 +27,21 @@
         <a href="https://www.facebook.com/ahmed.siddiqui.39501789/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
         <a href="http://twitter.com/Ahmedsidd_qui" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
     </div>
-    <footer>
-        <p>&copy; 2024, allaboutahmed</p>
-    </footer>
+    <div id="footersection"></div>
+    <script src="/assets/js/main.js"></script>
+    <script>
+          const changingText = document.getElementById("changing-text");
+  const textArray = ["خوش آمدید", "Bienvenue", "Willkommen", "Benvenuto", "Bem vindo", "Aloha", "Siyakwamukela"];
+  let textIndex = 0;
+  
+  setInterval(() => {
+    changingText.textContent = textArray[textIndex];
+    setTimeout(() => {
+      changingText.style.opacity = 1;
+      textIndex = (textIndex + 1) % textArray.length; 
+    }, 500);
+  }, 3000);     
+    </script>
 </div>
 </body>
 </html>

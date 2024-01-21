@@ -10,27 +10,13 @@
 </head>
 <body>
     <div class="margin">
-    <div class="top-section">
-        <div class="logo">
-            <img src="/assets/images/logo.png" alt="">
-        </div>
-        <div class="nav-items">
-            <ul>
-                <li><a href="/assets/page/home.html">home</a></li>
-                <li><a href="/assets/page/work.html">work</a></li>
-                <li><a href="/assets/page/resume.html">resume</a></li>
-                <li><a href="/assets/page/blogs.html">blogs</a></li>
-                <li><a href="/assets/page/about.html">about</a></li>
-            </ul>
-        </div>
-        </div>
-
-<div class="about-content">
-        <div class="about-content-left">
-            <div class="content-one">
-                <h3>Get in touch</h3>
-                <p>I'm always excited to share my knowledge. I'm available for talks you want. Contact me to discuss your event!</p>
-                <form id="form" action="https://formsubmit.co/ahmedsiddiqui3277@gmail.com" method="POST">
+        <div id="navsection"></div>
+        <div class="about-content">
+            <div class="about-content-left">
+                <div class="content-one">
+                    <h3>Get in touch</h3>
+                    <p>I'm always excited to share my knowledge. I'm available for talks you want. Contact me to discuss your event!</p>
+                    <form id="form" action="https://formsubmit.co/ahmedsiddiqui3277@gmail.com" method="POST">
                     <input class="input" type="text" name="name" placeholder="Name" required>
                     <input class="input" type="email" name="email" placeholder="Email address" required>
                     <input class="input" type="text" name="subject" placeholder="Subject" required>
@@ -51,17 +37,7 @@
         </div>
     </div>
 </div>
-<footer>
-    <p>&copy; 2024, allaboutahmed</p>
-</footer>
-
-
-<script>
-    document.getElementById("form").addEventListener("submit", function(event) {
-      event.preventDefault();
-      location.reload;
-      alert("Your form has been submitted successfully!");
-    });
-  </script>
+<div id="footersection"></div>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

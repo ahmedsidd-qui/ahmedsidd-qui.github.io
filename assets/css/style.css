@@ -4,6 +4,7 @@
 }
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
+
 html{
   scroll-behavior: smooth;
 }
@@ -119,10 +120,28 @@ html{
   .nav-items ul li a:hover {
     color: #3c3c3c;
   }
-  .picture {
+  .container {
+    position: relative;
+ }
+  
+  .overlay-text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000; 
+    font-size: 150px; 
+    font-weight: 900;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    text-align: center; 
+    opacity: 1;
+    transition: opacity 0.1s ease-in-out;
+  }
+ .picture img{
     margin-top: 70px;
     height: 250vh;
-    background-image: url(/assets/images/welcome-picture.jpg);
+    width: 100%;
     background-size: cover;
     box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
   }
@@ -143,7 +162,7 @@ html{
   footer p {
     font-size: 12px;
     color: #808080;
-    margin: 0 0 10px 10px;
+    margin: 35px 0 10px 10px;
   }
   
   @media (max-width: 768px) {
@@ -267,4 +286,58 @@ html{
 }
 .blog-right a:hover{
   color: #000;
+}
+
+.resume-top{
+  display: flex;
+  padding: 120px 180px;
+  align-items: center;
+}
+.resume-top-left img{
+  width: 300px;
+  filter:drop-shadow(0 0 5px rgb(0, 0, 0))
+}
+.resume-top-right{
+  margin-right: 25px;
+}
+.resume-top-right h4{
+  color: #808080;
+}
+.resume-top-right h1{
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+.resume-top-right p{
+  font-size: 18px;
+}
+.resume-top-right button{
+  margin-top: 20px;
+  padding: 12px 25px;
+  border: 1px solid #9a9a9a;
+  border-radius: 50px;
+  margin-right: 15px;
+  background: transparent;
+  cursor: pointer;
+}
+.resume-top-right button:hover{
+  background-color: #f0f0f0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid transparent;
+}
+.resume-bottom h2{
+  margin-bottom: 40px;
+  text-decoration: underline;
+  color: #808080;
+}
+.resume-content{
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+}
+.resume-content h3{
+  font-size: 25px;
+}
+.resume-content i{
+  width: 60px;
+  margin-right: 10px;
 }
