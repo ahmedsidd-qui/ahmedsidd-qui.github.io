@@ -87,11 +87,16 @@ html{
 }
 @media (max-width: 768px) {
   .name h1 {
-    font-size: 120px;
+    font-size: 80px;
+    align-items: center;
+    margin-top: 70px;
+  }
+  .circle{
+    display: none;
   }
 
   .enter a {
-    padding: 0 10px;
+    padding: 10px 30px;
     font-size: 16px;
   }
 }
@@ -106,6 +111,9 @@ html{
   .top-section .logo img {
     width: 250px;
     padding: 8px 16px;
+  }
+  .navicon{
+    display: none;
   }
   .nav-items ul li {
     display: inline-block;
@@ -136,6 +144,7 @@ html{
     font-style: italic;
     text-align: center; 
     opacity: 1;
+    background-color: #C0C6CD;
     transition: opacity 0.1s ease-in-out;
   }
  .picture img{
@@ -166,15 +175,32 @@ html{
   }
   
   @media (max-width: 768px) {
-    .top-section {
+    footer{
+      display: none;
+    }
+    .navicon{
+      display: block;
+      padding-bottom: 9px;
+      padding-left: 10px;
+    }
+    .margin{
+      margin: 10px;
+    }
+    .top-section img{
       align-items: center;
     }
-    .nav-items ul li {
-      padding: 0 10px;
+    .nav-items ul li{
+      display: none;
+    }
+    .overlay-text{
+      font-size: 30px;
     }
   
-    .picture {
-      height: 200vh;
+    .picture img{
+      align-items: center;
+      height: 60vh;
+
+      height: vh;
       background-position: center;
       background-repeat: no-repeat;
     }

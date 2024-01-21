@@ -11,6 +11,7 @@ document.getElementById("navsection").innerHTML = `
     <li><a href="/assets/page/about.html">about</a></li>
   </ul>
 </div>
+<div class="navicon"><a href="#"><i class="fa-solid fa-bars fa-lg" style="color: #666666;"></i></a></div>
 </div>
 `
 document.getElementById("footersection").innerHTML = `
