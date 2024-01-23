@@ -181,7 +181,7 @@ html{
       margin: 0;
     }
     .top-section .logo img {
-      padding: 8px 0;
+      padding: 8px 0 0 0;
     }
     .top-section{
       width: 100%;
@@ -198,11 +198,21 @@ html{
     .margin{
       margin: 10px;
     }
-    .top-section img{
-      align-items: center;
+    .top-section{
+      flex-direction: column;
     }
-    .nav-items ul li{
-      display: none;
+    .top-section ul{
+      padding: 0;
+    }
+    .top-section ul li{
+      padding: 0 5px;
+    }
+    .top-section ul li a{
+      font-size: 12px;
+    }
+    .nav-items{
+      width: 100%;
+      text-align: center;
     }
     .overlay-text{
       font-size: 30px;
@@ -211,8 +221,6 @@ html{
     .picture img{
       align-items: center;
       height: 60vh;
-
-      height: vh;
       background-position: center;
       background-repeat: no-repeat;
     }
