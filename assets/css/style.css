@@ -90,6 +90,7 @@ html{
     font-size: 70px;
     align-items: center;
     margin-top: 120px;
+    font-family: futura;
   }
   .circle{
     display: none;
@@ -250,6 +251,7 @@ html{
 .content-one{
   background-color: #e4e4e499;
   border-radius: 5px;
+  
   margin-bottom: 70px;
   padding: 80px;
   text-align: center;
@@ -410,10 +412,15 @@ html{
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   border: 1px solid transparent;
 }
+.resume-bottom{
+  background-color: #0c6aa04c;
+  padding: 40px;
+  border-radius: 10px;
+}
 .resume-bottom h2{
+  font-size: 40px;
   margin-bottom: 40px;
-  text-decoration: underline;
-  color: #808080;
+  filter: drop-shadow(3px 3px 1px rgba(0,0,0,0.3));
 }
 .resume-content{
   display: flex;
@@ -422,10 +429,14 @@ html{
 }
 .resume-content h3{
   font-size: 25px;
+  color: #000;
 }
 .resume-content i{
   width: 60px;
   margin-right: 10px;
+}
+.resume-content-img i{
+  color: #1a6b9b;
 }
 @media (max-width: 768px) {
   .resume-top{
@@ -434,5 +445,11 @@ html{
   }
   .resume-top-right{
     padding-top: 40px;
+  }
+  .resume-content-content h3{
+    font-size: 20px;
+  }
+  .resume-bottom h2{
+    color: #000 ;
   }
 }
