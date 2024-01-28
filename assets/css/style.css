@@ -15,7 +15,7 @@ html{
   margin: 0;
   font-family: futura;
 }
-.start-page video {
+.start-page img {
   filter: blur(1px);
   position: fixed;
   top: 0;
