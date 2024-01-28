@@ -90,14 +90,20 @@ html{
     font-size: 70px;
     align-items: center;
     margin-top: 120px;
-    font-family: futura;
+    font-family: 'Dancing Script', cursive;
   }
   .circle{
     display: none;
   }
   .links {
-    display: flex;
-    justify-content: space-around;
+    padding-top: 25vh;
+  }
+  .links i{
+    padding: 2px;
+    margin: 0;
+  }
+  .sw-engr h2 {
+    font-size: 15px;
   }
   .enter a {
     padding: 10px 30px;
