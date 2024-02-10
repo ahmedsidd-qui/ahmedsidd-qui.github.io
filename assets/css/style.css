@@ -472,6 +472,7 @@ html{
   margin-right: 15px;
   background: transparent;
   cursor: pointer;
+  transition: .3s;
 }
 .resume-top-right button:hover{
   background-color: #f0f0f0;
@@ -517,5 +518,8 @@ html{
   }
   .resume-bottom h2{
     color: #000 ;
+  }
+  .resume-bottom{
+    padding: 10px;
   }
 }
