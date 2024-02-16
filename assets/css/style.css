@@ -84,8 +84,10 @@ html {
 .enter button {
   padding: 15px 40px;
   text-decoration: none;
-  background: #808080;
+  background: #80808073;
   animation: wiggle 2s linear infinite;
+  color: #a4a4a4;
+  border: none;
   font-size: 20px;
 }
 .links {
