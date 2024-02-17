@@ -14,7 +14,7 @@ html {
   margin: 0;
   font-family: futura;
 }
-.start-page img {
+/* .start-page img {
   filter: brightness(60%);
   filter: blur(2px);
   position: fixed;
@@ -51,10 +51,10 @@ html {
   font-size: 25px;
   padding-bottom: 25px;
   color: #9a9a9a;
-}
+} */
 .enter {
-  padding-bottom: 35px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 @keyframes wiggle {
   0%,
@@ -90,13 +90,13 @@ html {
   border: none;
   font-size: 20px;
 }
-.links {
+/* .links {
   font-size: 30px;
 }
 .links i {
   padding: 8px 10px;
   filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.4));
-}
+} */
 
 .circle {
   height: 8px;
@@ -108,7 +108,7 @@ html {
   left: 0;
 }
 @media (max-width: 768px) {
-  .name h1 {
+  /* .name h1 {
     font-size: 70px;
     align-items: center;
     margin-top: 120px;
@@ -125,12 +125,50 @@ html {
   }
   .sw-engr h2 {
     font-size: 15px;
+  } */
+
+}
+
+.home-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 118px;
+}
+.starting-email {
+  text-align: end;
+}
+.starting-email a{
+  text-decoration: none;
+  color: #fff;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.starting-heading h1{
+  font-size: 100px;
+  padding-left: 20px;
+  color: #fff;
+}
+.starting-heading span{
+  font-size: 20px;
+  font-weight: 100;
+}
+@media (max-width : 768px){
+  .home-container{
+    gap: 180px ;
+  }
+  .starting-heading span{
+    display: flex;
+  }
+  .starting-heading h1{
+    font-size: 75px;
   }
   .enter a {
     padding: 10px 30px;
     font-size: 16px;
   }
 }
+
 /* homepage.html */
 .top-section {
   display: flex;
