@@ -113,9 +113,6 @@ html {
     align-items: center;
     margin-top: 120px;
   }
-  .circle {
-    display: none;
-  }
   .links {
     padding-top: 20vh;
   }
@@ -133,21 +130,28 @@ html {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 118px;
+  gap: 110px;
 }
 .starting-email {
   text-align: end;
+  padding-top: 16px;
 }
 .starting-email a{
   text-decoration: none;
-  color: #fff;
-  padding-right: 20px;
-  padding-top: 20px;
+  color: #ffffffda;
+  letter-spacing: 3px;
+  padding-right: 60px;
+  animation: type 3s steps(44, end) forwards;
 }
 .starting-heading h1{
   font-size: 100px;
   padding-left: 20px;
   color: #fff;
+  font-weight: bold;
+  letter-spacing: 16px;
+  overflow: hidden; 
+  animation: type 3s steps(44, end) forwards;
+
 }
 .starting-heading span{
   font-size: 20px;
@@ -162,10 +166,33 @@ html {
   }
   .starting-heading h1{
     font-size: 75px;
+    letter-spacing: normal;
+    padding-left: 0 ;
+  }
+  .starting-email{
+    text-align: center !important;
+  }
+  .starting-email a{
+    padding-right: 0;
   }
   .enter a {
     padding: 10px 30px;
     font-size: 16px;
+  }
+  .circle {
+    display: none;
+  }
+}
+
+@keyframes type {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #ffffff49;
+  }
+  100% {
+    color: #ffffffda;
   }
 }
 
