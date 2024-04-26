@@ -597,5 +597,6 @@ footer p {
   }
   .projects a {
     letter-spacing: 2px;
+    margin-left: 30px !important;
   }
 }
