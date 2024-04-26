@@ -588,11 +588,14 @@ footer p {
 .projects a:hover {
   color: #000;
 }
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .heading-work-section {
     font-size: 3rem;
   }
   .ui-card h2 {
     font-size: 3rem;
+  }
+  .projects a {
+    letter-spacing: 2px;
   }
 }
