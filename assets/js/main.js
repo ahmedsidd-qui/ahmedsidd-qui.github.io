@@ -7,19 +7,14 @@ document.getElementById("navsection").innerHTML = `
   <ul>
     <li><a href="home.html">home</a></li>
     <li><a href="resume.html">resume</a></li>
+    <li><a href="work.html">work</a></li>
     <li><a href="blogs.html">blogs</a></li>
     <li><a href="about.html">about</a></li>
   </ul>
 </div>
 </div>
-`
+`;
 document.getElementById("footersection").innerHTML = `
 <footer>
 <p>&copy; 2024, allaboutahmed</p>
-</footer>`
-// about.html form
-document.getElementById("form").addEventListener("submit", function(event) {
-    alert("Your form has been submitted successfully!");
-  });
-  
-  
+</footer>`;

@@ -2,19 +2,18 @@
   font-family: futura;
   src: url(/assets/fonts/futura\ light\ bt.ttf);
 }
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
 
 html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
   background-color: transparent;
   border-radius: 50px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
   background-color: #808080;
   border-radius: 50px;
 }
@@ -73,7 +72,7 @@ html {
   top: 0;
   left: 0;
 }
-.home-container{
+.home-container {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -83,43 +82,42 @@ html {
   text-align: end;
   padding-top: 16px;
 }
-.starting-email a{
+.starting-email a {
   text-decoration: none;
   color: #ffffffda;
   letter-spacing: 3px;
   padding-right: 60px;
   animation: type 3s steps(44, end) forwards;
 }
-.starting-heading h1{
+.starting-heading h1 {
   font-size: 100px;
   padding-left: 20px;
   color: #fff;
   font-weight: bold;
   letter-spacing: 16px;
-  overflow: hidden; 
+  overflow: hidden;
   animation: type 3s steps(44, end) forwards;
-
 }
-.starting-heading span{
+.starting-heading span {
   font-size: 20px;
   font-weight: 100;
 }
-@media (max-width : 768px){
-  .home-container{
-    gap: 180px ;
+@media (max-width: 768px) {
+  .home-container {
+    gap: 180px;
   }
-  .starting-heading span{
+  .starting-heading span {
     display: flex;
   }
-  .starting-heading h1{
+  .starting-heading h1 {
     font-size: 75px;
     letter-spacing: normal;
-    padding-left: 0 ;
+    padding-left: 0;
   }
-  .starting-email{
+  .starting-email {
     text-align: center !important;
   }
-  .starting-email a{
+  .starting-email a {
     padding-right: 0;
   }
   .enter a {
@@ -552,4 +550,41 @@ footer p {
   .resume-bottom {
     padding: 10px;
   }
+}
+/* work.html */
+
+.heading-work-section {
+  font-size: 6rem;
+  padding-bottom: 2rem;
+}
+.ui-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ui-card img {
+  border: 3px solid #000;
+  width: 400px;
+  height: 700px;
+  margin-bottom: 2rem;
+  margin-right: 1rem;
+}
+.ui-card h2 {
+  font-size: 6rem;
+  writing-mode: vertical-lr;
+}
+.ui-card a {
+  writing-mode: vertical-lr;
+  color: #808080;
+}
+.ui-card a:hover {
+  color: #4f4f4f;
+}
+.projects a {
+  letter-spacing: 6px;
+  margin-left: 90px;
+  color: #808080;
+}
+.projects a:hover {
+  color: #000;
 }

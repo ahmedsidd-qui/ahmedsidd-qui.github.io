@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/f073c0302b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Resume</title>
+    <link rel="icon" type="image/png" href="/assets/images/tab.png" />
+  </head>
+  <body>
+    <div class="margin">
+      <div id="navsection"></div>
+      <h1 class="heading-work-section"><center>My Work</center></h1>
+      <div class="ui-design"></div>
+      <h1 class="heading-work-section"><center>Side Projects</center></h1>
+      <div class="projects">
+        <a href="" target="_blank">1. GPA Calculator</a><br />
+        <a href="" target="_blank">2. Dice Roller Simulator</a><br />
+        <a href="" target="_blank">3. Currency Converter using API</a><br />
+        <a href="" target="_blank">4. Text Based Game</a>
+      </div>
+    </div>
+    <div id="footersection"></div>
+    <script>
+      let work = [
+        {
+          workheading: "Ecommerce",
+          image: "/assets/images/Homepage.PNG",
+          github: "https://github.com/ahmedsidd-qui/abelton",
+        },
+        {
+          workheading: "Banking Site",
+          image: "/assets/images/besnik.jpg",
+          github: "https://github.com/ahmedsidd-qui/besnik",
+        },
+        {
+          workheading: "Wanderwage",
+          image: "/assets/images/the wanderwage.png",
+          github: "https://github.com/ahmedsidd-qui/The-Wandering-Wave",
+        },
+      ];
+      for (let index = 0; index < work.length; index++) {
+        document.querySelector(".ui-design").innerHTML += `
+  <div class="ui-card">
+    <img src="${work[index].image}" alt="" />
+    <a href="${work[index].github}" target="_blank">GitHub Repository</a>
+    <h2>${work[index].workheading}</h2>
+</div>`;
+      }
+    </script>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
