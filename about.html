@@ -16,7 +16,7 @@
                 <div class="login-box">
                     <h3>Get in touch</h3>
                     <p>I'm always excited to share my knowledge. I'm available for talks you want. Contact me to discuss your event!</p>
-                    <form id="form" action="https://formsubmit.co/ahmedsiddiqui3277@gmail.com" method="POST">
+                    <form id="form" action="formhandler.php" method="POST">
                         <div class="user-box">
                             <input type="text" name="name" required="">
                             <label>Name</label>
@@ -26,19 +26,16 @@
                             <label>Email Address</label>
                           </div>
                               <div class="user-box">
-                            <input type="text" name="Subject" required="">
+                            <input type="text" name="subject" required="">
                             <label>Subject</label>
                           </div>
                               <div class="user-box">
-                            <input type="text" name="Message" required="">
+                            <input type="text" name="message" required="">
                             <label>Message</label>
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://github.com/ahmedsidd-qui">
                           </div>
                           <center>
-                          <button type="submit">
+                          <button type="submit" name="submit">
                                  SEND</button>
-                             <span></span>
                           </a></center>
                       
                 </form>
