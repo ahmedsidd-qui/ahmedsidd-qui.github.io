@@ -7,7 +7,6 @@ document.getElementById("navsection").innerHTML = `
   <ul>
     <li><a href="./home">home</a></li>
     <li><a href="./resume">resume</a></li>
-    <li><a href="./work">work</a></li>
     <li><a href="./blogs">blogs</a></li>
     <li><a href="./about">about</a></li>
   </ul>
