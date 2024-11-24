@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://kit.fontawesome.com/f073c0302b.js" crossorigin="anonymous"></script>
     <title>About</title>
     <link rel="icon" type="image/png" href="/assets/images/tab.png">
@@ -16,7 +16,7 @@
                 <div class="login-box">
                     <h3>Get in touch</h3>
                     <p>I'm always excited to share my knowledge. I'm available for talks you want. Contact me to discuss your event!</p>
-                    <form id="form">
+                    <form id="form" method="POST" action="form.php">
                         <div class="user-box">
                             <input type="text" name="name" required="">
                             <label>Name</label>
@@ -26,18 +26,15 @@
                             <label>Email Address</label>
                           </div>
                               <div class="user-box">
-                            <input type="text" name="Subject" required="">
+                            <input type="text" name="subject" required="">
                             <label>Subject</label>
                           </div>
                               <div class="user-box">
-                            <input type="text" name="Message" required="">
+                            <input type="text" name="message" required="">
                             <label>Message</label>
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_next" value="https://github.com/ahmedsidd-qui">
                           </div>
                           <center>
-                          <button type="submit">
-                                 SEND</button>
+                          <button type="submit">SEND</button>
                              <span></span>
                           </a></center>
                       
